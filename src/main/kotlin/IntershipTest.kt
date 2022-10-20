@@ -86,6 +86,17 @@ class IntershipTest {
         println()
     }
 
+    fun printCharNewLine() {
+        println("----------Print Char in New Line----------")
+        print("Input the word : ")
+        val input = Scanner(System.`in`).nextLine()
+
+        for (i in input) {
+            println(i)
+        }
+        println()
+    }
+
 }
 
 fun main() {
@@ -97,5 +108,5 @@ fun main() {
     intershipTest.positiveOrNegativefNumbers()
     intershipTest.lowertoUpper()
     intershipTest.findThe9thChar()
-
+    intershipTest.printCharNewLine()
 }
