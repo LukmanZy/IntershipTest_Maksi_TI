@@ -97,6 +97,20 @@ class IntershipTest {
         println()
     }
 
+    fun printLowtInteger() {
+        println("----------Print lowest integer from array ----------")
+        println("[5,9,13,43,2,7}")
+
+        val array = arrayOf(5, 9, 13, 43, 2, 7)
+        val result = Array(array.size, {0})
+        for (i in 0 until array.size) {
+            result[i] = array[i]
+        }
+        result.sort()
+        println("result: {${result.joinToString(", ")}}")
+        println()
+    }
+
 }
 
 fun main() {
@@ -109,4 +123,5 @@ fun main() {
     intershipTest.lowertoUpper()
     intershipTest.findThe9thChar()
     intershipTest.printCharNewLine()
+    intershipTest.printLowtInteger()
 }
