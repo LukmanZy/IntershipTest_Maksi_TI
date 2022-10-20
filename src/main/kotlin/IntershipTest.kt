@@ -66,6 +66,17 @@ class IntershipTest {
         println()
     }
 
+    fun lowertoUpper() {
+        println("----------Program Lower Case to Upper Case----------")
+
+        print("Input the word : ")
+        val input = Scanner(System.`in`).nextLine()
+        val result = input.uppercase()
+
+        println(result)
+        println()
+    }
+
 }
 
 fun main() {
@@ -75,5 +86,6 @@ fun main() {
     intershipTest.sumOfTenNumbers()
     intershipTest.primeOrNot()
     intershipTest.positiveOrNegativefNumbers()
+    intershipTest.lowertoUpper()
 
 }
