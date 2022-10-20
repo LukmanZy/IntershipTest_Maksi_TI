@@ -1,3 +1,5 @@
+import java.util.*
+
 class IntershipTest {
 
     fun helloWorld() {
@@ -22,6 +24,32 @@ class IntershipTest {
         println(result)
         println()
     }
+
+    fun primeOrNot() {
+        println("----------Prime Number or Not----------")
+
+        val bil: Int
+        var cek = 0
+        var i = 2
+        val input = Scanner(System.`in`)
+
+        print("Enter the number : ")
+        bil = input.nextInt()
+
+        while (i < bil) {
+            if (bil % i == 0) {
+                cek++
+            }
+            i++
+        }
+        if (cek == 0) {
+            println("$bil is prime number")
+        } else {
+            println("$bil is not prime number")
+        }
+        println()
+    }
+
 }
 
 fun main() {
@@ -29,4 +57,6 @@ fun main() {
 
     intershipTest.helloWorld()
     intershipTest.sumOfTenNumbers()
+    intershipTest.primeOrNot()
+
 }
