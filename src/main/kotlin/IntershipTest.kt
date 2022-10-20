@@ -50,6 +50,22 @@ class IntershipTest {
         println()
     }
 
+    fun positiveOrNegativefNumbers(){
+        println("----------Check Positive Number or Negative----------")
+
+        val nilai: Int
+        val input = Scanner(System.`in`)
+
+        print("Enter the number : ")
+        nilai = input.nextInt()
+        if (nilai > 0) {
+            println("$nilai is Positive")
+        } else if (nilai < 0) {
+            println("$nilai is Negative")
+        }
+        println()
+    }
+
 }
 
 fun main() {
@@ -58,5 +74,6 @@ fun main() {
     intershipTest.helloWorld()
     intershipTest.sumOfTenNumbers()
     intershipTest.primeOrNot()
+    intershipTest.positiveOrNegativefNumbers()
 
 }
