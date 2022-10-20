@@ -99,7 +99,7 @@ class IntershipTest {
 
     fun printLowtInteger() {
         println("----------Print lowest integer from array ----------")
-        println("[5,9,13,43,2,7}")
+        println("Array of numbers: {5,9,13,43,2,7}")
 
         val array = arrayOf(5, 9, 13, 43, 2, 7)
         val result = Array(array.size, {0})
@@ -111,17 +111,31 @@ class IntershipTest {
         println()
     }
 
+    fun sumNumberinArray() {
+        println("----------Sum the numbers in array ----------")
+        println("Array of numbers: {5,9,13,43,2,7}")
+
+        val array = arrayOf(5, 9, 13, 43, 2, 7)
+        var result = 0
+
+        for (i in array) {
+            result+= i
+        }
+        println("result: $result")
+    }
+
 }
 
 fun main() {
     val intershipTest = IntershipTest()
 
-    intershipTest.helloWorld()
-    intershipTest.sumOfTenNumbers()
-    intershipTest.primeOrNot()
-    intershipTest.positiveOrNegativefNumbers()
-    intershipTest.lowertoUpper()
-    intershipTest.findThe9thChar()
-    intershipTest.printCharNewLine()
-    intershipTest.printLowtInteger()
+//    intershipTest.helloWorld()
+//    intershipTest.sumOfTenNumbers()
+//    intershipTest.primeOrNot()
+//    intershipTest.positiveOrNegativefNumbers()
+//    intershipTest.lowertoUpper()
+//    intershipTest.findThe9thChar()
+//    intershipTest.printCharNewLine()
+//    intershipTest.printLowtInteger()
+    intershipTest.sumNumberinArray()
 }
