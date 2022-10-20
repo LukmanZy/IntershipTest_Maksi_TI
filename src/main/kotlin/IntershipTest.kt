@@ -77,6 +77,15 @@ class IntershipTest {
         println()
     }
 
+    fun findThe9thChar() {
+        println("----------Find the 9th Char of a Given String----------")
+        print("Input the word : ")
+        val word = Scanner(System.`in`).nextLine()
+
+        println("the 9th character of the word $word is = ${word[9]}")
+        println()
+    }
+
 }
 
 fun main() {
@@ -87,5 +96,6 @@ fun main() {
     intershipTest.primeOrNot()
     intershipTest.positiveOrNegativefNumbers()
     intershipTest.lowertoUpper()
+    intershipTest.findThe9thChar()
 
 }
