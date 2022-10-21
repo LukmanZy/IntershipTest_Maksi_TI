@@ -82,12 +82,12 @@ class IntershipTest {
         print("Input the word : ")
         val word = Scanner(System.`in`).nextLine()
 
-        println("the 9th character of the word $word is = ${word[9]}")
+        println("the 9th char of the word $word is = ${word[9]}")
         println()
     }
 
     fun printCharNewLine() {
-        println("----------Print Char in New Line----------")
+        println("----------Char in New Line----------")
         print("Input the word : ")
         val input = Scanner(System.`in`).nextLine()
 
@@ -98,17 +98,13 @@ class IntershipTest {
     }
 
     fun printLowtInteger() {
-        println("----------Print lowest integer from array ----------")
+        println("----------lowest integer from array ----------")
         println("Array of numbers: {5,9,13,43,2,7}")
 
         val array = arrayOf(5, 9, 13, 43, 2, 7)
-        val result = Array(array.size, {0})
-        for (i in 0 until array.size) {
-            result[i] = array[i]
-        }
-        result.sort()
-        println("result: {${result.joinToString(", ")}}")
-        println()
+        val result = array.toList()
+
+        println("Lowest integer in arraay is = ${result.min()}")
     }
 
     fun sumNumberinArray() {
@@ -124,18 +120,33 @@ class IntershipTest {
         println("result: $result")
     }
 
+    fun printArrayAscending() {
+        println("----------Print array to sort ascending----------")
+        println("Array of numbers: {5,9,13,43,2,7}")
+
+        val array = arrayOf(5, 9, 13, 43, 2, 7)
+        val result = Array(array.size, {0})
+        for (i in 0 until array.size) {
+            result[i] = array[i]
+        }
+        result.sort()
+        println("result: {${result.joinToString(", ")}}")
+        println()
+    }
+
 }
 
 fun main() {
     val intershipTest = IntershipTest()
 
-//    intershipTest.helloWorld()
-//    intershipTest.sumOfTenNumbers()
-//    intershipTest.primeOrNot()
-//    intershipTest.positiveOrNegativefNumbers()
-//    intershipTest.lowertoUpper()
-//    intershipTest.findThe9thChar()
-//    intershipTest.printCharNewLine()
-//    intershipTest.printLowtInteger()
+    intershipTest.helloWorld()
+    intershipTest.sumOfTenNumbers()
+    intershipTest.primeOrNot()
+    intershipTest.positiveOrNegativefNumbers()
+    intershipTest.lowertoUpper()
+    intershipTest.findThe9thChar()
+    intershipTest.printCharNewLine()
+    intershipTest.printLowtInteger()
     intershipTest.sumNumberinArray()
+    intershipTest.printArrayAscending()
 }
